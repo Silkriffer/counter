@@ -1,0 +1,94 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(peter-yost-I9jJXmNkXR4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#countLabel {
+    font-size: 5rem;
+    padding: 50px;
+    color: red;
+}
+
+.countBtn {
+    padding: 100px;
+}
+
+button {
+    width: 120px;
+    background: none;
+    height: 75px;
+    margin: 70px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    #countLabel {
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    .countBtn {
+        padding: 50px;
+    }
+
+    button {
+        width: 100px;
+        height: 60px;
+        margin: 40px;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: 900;
+    }
+    .actionBtn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #countLabel {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .countBtn {
+        padding: 20px;
+    }
+
+    button {
+        width: 120px;
+        height: 50px;
+        margin: 20px;
+        font-size: 1rem;
+        color: black;
+        font-weight: 900;
+    }
+
+    .actionBtn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    body {
+        background-color: rgba(0, 0, 0, 5);
+        filter: brightness(50%);
+    }
+}
